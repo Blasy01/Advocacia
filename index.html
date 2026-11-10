@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nome da Advogada | Advocacia & Consultoria Jurídica</title>
+<meta name="description" content="Advocacia com atendimento humanizado: Família e Sucessões, Consumidor, Civil, Trabalhista e Previdenciário.">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { navy:{900:'#0E1B33',800:'#14264A',700:'#1D3562'}, gold:{300:'#DCC58F',400:'#C9A961',500:'#B08D45'}, ivory:'#F6F5F1' },
+  fontFamily: { serif:['"Cormorant Garamond"','Georgia','serif'], sans:['Manrope','system-ui','sans-serif'] }
+}}}
+</script>
+<style>
+  html{scroll-behavior:smooth;scroll-padding-top:5rem}
+  body{font-family:Manrope,system-ui,sans-serif}
+  :focus-visible{outline:2px solid #C9A961;outline-offset:3px}
+  .rule{height:2px;width:56px;background:#C9A961}
+  .card{transition:transform .25s,box-shadow .25s,border-color .25s}
+  .card:hover{transform:translateY(-4px);box-shadow:0 18px 40px -18px rgba(14,27,51,.35);border-color:#C9A961}
+  .hero-in{animation:rise .9s ease both}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-in{animation:none}.card{transition:none}}
+  .err{color:#B42318;font-size:.8rem;margin-top:.25rem;display:none}
+  .invalid{border-color:#B42318!important}
+</style>
+</head>
+<body class="bg-ivory text-navy-900 antialiased">
+
+<!-- HEADER -->
+<header class="fixed top-0 inset-x-0 z-50 bg-navy-900/95 backdrop-blur border-b border-gold-400/30">
+  <div class="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
+    <a href="#inicio" class="leading-tight">
+      <span class="block font-serif text-xl font-semibold text-white">Nome da Advogada</span>
+      <span class="block text-[11px] text-gold-300 tracking-wide">Advocacia &amp; Consultoria Jurídica</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-8 text-sm text-white/85" aria-label="Principal">
+      <a class="hover:text-gold-300" href="#inicio">Início</a>
+      <a class="hover:text-gold-300" href="#sobre">Sobre Mim</a>
+      <a class="hover:text-gold-300" href="#areas">Áreas de Atuação</a>
+      <a class="hover:text-gold-300" href="#diferenciais">Diferenciais</a>
+      <a class="hover:text-gold-300" href="#contato">Contato</a>
+    </nav>
+    <div class="flex items-center gap-3">
+      <a href="#contato" class="hidden sm:inline-block bg-gold-400 hover:bg-gold-300 text-navy-900 font-semibold text-sm px-5 py-2.5 rounded-full transition">Agendar Consulta</a>
+      <button id="menuBtn" class="lg:hidden text-white text-xl w-10 h-10" aria-label="Abrir menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <nav id="mobileMenu" class="hidden lg:hidden bg-navy-900 border-t border-white/10 px-5 py-4 text-white/90 space-y-1" aria-label="Menu móvel">
+    <a class="block py-2" href="#inicio">Início</a>
+    <a class="block py-2" href="#sobre">Sobre Mim</a>
+    <a class="block py-2" href="#areas">Áreas de Atuação</a>
+    <a class="block py-2" href="#diferenciais">Diferenciais</a>
+    <a class="block py-2" href="#contato">Contato</a>
+    <a href="#contato" class="block text-center bg-gold-400 text-navy-900 font-semibold py-3 rounded-full mt-3">Agendar Consulta</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="inicio" class="relative pt-16 bg-navy-900 text-white overflow-hidden">
+  <div class="absolute inset-0 opacity-[.07]" style="background:radial-gradient(circle at 80% 20%,#C9A961,transparent 45%)"></div>
+  <div class="relative max-w-7xl mx-auto px-5 py-16 lg:py-24 grid lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-7 hero-in">
+      <div class="rule mb-6"></div>
+      <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.08]">Seus direitos defendidos com firmeza e cuidado de verdade.</h1>
+      <p class="mt-6 text-lg text-white/80 max-w-xl leading-relaxed">Experiência, ética, agilidade e atenção a cada detalhe do seu caso. Aqui você é ouvido, entende cada passo e tem uma advogada ao seu lado do início ao fim.</p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-4">
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20falar%20sobre%20meu%20caso." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 bg-gold-400 hover:bg-gold-300 text-navy-900 font-semibold px-7 py-3.5 rounded-full transition"><i class="fa-brands fa-whatsapp text-xl"></i> Falar no WhatsApp</a>
+        <a href="#areas" class="inline-flex items-center justify-center gap-2 border border-gold-400/60 hover:bg-white/5 text-white font-semibold px-7 py-3.5 rounded-full transition">Conhecer Especialidades</a>
+      </div>
+    </div>
+    <div class="lg:col-span-5 hero-in" style="animation-delay:.15s">
+      <!-- Substitua este bloco por <img src="sua-foto.jpg" alt="Foto da advogada" class="w-full h-full object-cover"> -->
+      <div class="relative mx-auto max-w-sm">
+        <div class="absolute -inset-3 border border-gold-400/50 rounded-t-[10rem] rounded-b-xl translate-x-3 translate-y-3"></div>
+        <div class="relative aspect-[4/5] rounded-t-[10rem] rounded-b-xl bg-gradient-to-b from-navy-700 to-navy-800 flex flex-col items-center justify-center overflow-hidden">
+          <i class="fa-solid fa-scale-balanced text-gold-400" style="font-size:6rem"></i>
+          <span class="mt-2 text-sm text-white/60">Espaço para sua foto profissional</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14">
+    <div>
+      <div class="rule mb-5"></div>
+      <h2 class="font-serif text-4xl lg:text-5xl font-semibold">Sobre a advogada</h2>
+      <p class="mt-6 text-navy-900/80 leading-relaxed">Há vários anos atuo na defesa de pessoas e famílias em momentos decisivos. Minha trajetória começou na advocacia consultiva e evoluiu para o contencioso, sempre com a convicção de que um bom resultado jurídico começa por uma escuta atenta.</p>
+      <p class="mt-4 text-navy-900/80 leading-relaxed">Acredito em linguagem clara, estratégia personalizada e comunicação constante. Você não precisa entender de leis para se sentir seguro: eu explico cada etapa, os riscos e os caminhos possíveis.</p>
+      <ul class="mt-8 space-y-4 text-sm">
+        <li class="flex gap-4"><i class="fa-solid fa-graduation-cap text-gold-500 mt-1 w-5"></i><span><b>Graduação em Direito</b> pela Universidade (nome da instituição)</span></li>
+        <li class="flex gap-4"><i class="fa-solid fa-book-open text-gold-500 mt-1 w-5"></i><span><b>Pós-graduação</b> em Direito Civil e Processo Civil</span></li>
+        <li class="flex gap-4"><i class="fa-solid fa-id-card text-gold-500 mt-1 w-5"></i><span><b>OAB/UF nº 000.000</b> (substitua pelo seu número)</span></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-serif text-2xl font-semibold mb-6">Valores que guiam meu trabalho</h3>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div class="bg-white border border-navy-900/10 rounded-xl p-6"><i class="fa-solid fa-scale-balanced text-2xl text-gold-500"></i><h4 class="font-semibold mt-3">Ética</h4><p class="text-sm text-navy-900/70 mt-1">Compromisso com a verdade e com as normas da profissão.</p></div>
+        <div class="bg-white border border-navy-900/10 rounded-xl p-6"><i class="fa-solid fa-hand-holding-heart text-2xl text-gold-500"></i><h4 class="font-semibold mt-3">Empatia</h4><p class="text-sm text-navy-900/70 mt-1">Cada caso envolve pessoas reais e merece acolhimento.</p></div>
+        <div class="bg-white border border-navy-900/10 rounded-xl p-6"><i class="fa-solid fa-eye text-2xl text-gold-500"></i><h4 class="font-semibold mt-3">Transparência</h4><p class="text-sm text-navy-900/70 mt-1">Honorários, prazos e riscos explicados com clareza.</p></div>
+        <div class="bg-white border border-navy-900/10 rounded-xl p-6"><i class="fa-solid fa-bolt text-2xl text-gold-500"></i><h4 class="font-semibold mt-3">Eficiência</h4><p class="text-sm text-navy-900/70 mt-1">Estratégia objetiva para chegar ao resultado sem demora.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ÁREAS -->
+<section id="areas" class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="max-w-2xl">
+      <div class="rule mb-5"></div>
+      <h2 class="font-serif text-4xl lg:text-5xl font-semibold">Áreas de atuação</h2>
+      <p class="mt-4 text-navy-900/70">Escolha a área do seu caso e fale comigo. A primeira conversa é para entender sua situação.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="areasGrid"></div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais" class="py-20 lg:py-28 bg-navy-900 text-white">
+  <div class="max-w-7xl mx-auto px-5">
+    <div class="max-w-2xl">
+      <div class="rule mb-5"></div>
+      <h2 class="font-serif text-4xl lg:text-5xl font-semibold">Por que confiar seu caso a mim</h2>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="border border-white/15 rounded-xl p-7"><i class="fa-solid fa-user-check text-3xl text-gold-400"></i><h3 class="font-serif text-2xl mt-4">Atendimento personalizado</h3><p class="text-sm text-white/70 mt-2">Cada caso recebe uma estratégia própria, sem modelos prontos.</p></div>
+      <div class="border border-white/15 rounded-xl p-7"><i class="fa-solid fa-comments text-3xl text-gold-400"></i><h3 class="font-serif text-2xl mt-4">Respostas rápidas</h3><p class="text-sm text-white/70 mt-2">Retorno ágil pelo WhatsApp e e-mail, em horário comercial.</p></div>
+      <div class="border border-white/15 rounded-xl p-7"><i class="fa-solid fa-lock text-3xl text-gold-400"></i><h3 class="font-serif text-2xl mt-4">Sigilo absoluto</h3><p class="text-sm text-white/70 mt-2">Tudo o que você compartilha é protegido por sigilo profissional.</p></div>
+      <div class="border border-white/15 rounded-xl p-7"><i class="fa-solid fa-route text-3xl text-gold-400"></i><h3 class="font-serif text-2xl mt-4">Transparência em cada etapa</h3><p class="text-sm text-white/70 mt-2">Você acompanha o andamento e entende cada decisão.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="py-20 lg:py-28">
+  <div class="max-w-6xl mx-auto px-5 grid lg:grid-cols-5 gap-12">
+    <div class="lg:col-span-2">
+      <div class="rule mb-5"></div>
+      <h2 class="font-serif text-4xl lg:text-5xl font-semibold">Agende sua consulta</h2>
+      <p class="mt-5 text-navy-900/75 leading-relaxed">Preencha o formulário e sua mensagem chegará direto ao meu WhatsApp, já organizada. Respondo o quanto antes em horário comercial.</p>
+      <p class="mt-6 text-sm text-navy-900/60"><i class="fa-solid fa-shield-halved text-gold-500 mr-2"></i>Seus dados são usados apenas para este contato.</p>
+    </div>
+    <form id="form" novalidate class="lg:col-span-3 bg-white border border-navy-900/10 rounded-2xl p-6 sm:p-8 shadow-sm space-y-5">
+      <div>
+        <label for="nome" class="block text-sm font-semibold mb-1.5">Nome completo *</label>
+        <input id="nome" name="nome" type="text" autocomplete="name" class="w-full border border-navy-900/20 rounded-lg px-4 py-3 focus:border-gold-500" placeholder="Seu nome">
+        <p class="err">Informe seu nome completo (nome e sobrenome).</p>
+      </div>
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="email" class="block text-sm font-semibold mb-1.5">E-mail *</label>
+          <input id="email" name="email" type="email" autocomplete="email" class="w-full border border-navy-900/20 rounded-lg px-4 py-3 focus:border-gold-500" placeholder="voce@email.com">
+          <p class="err">Informe um e-mail válido.</p>
+        </div>
+        <div>
+          <label for="whats" class="block text-sm font-semibold mb-1.5">WhatsApp *</label>
+          <input id="whats" name="whats" type="tel" autocomplete="tel" inputmode="tel" class="w-full border border-navy-900/20 rounded-lg px-4 py-3 focus:border-gold-500" placeholder="(00) 00000-0000">
+          <p class="err">Informe DDD e número, com 10 ou 11 dígitos.</p>
+        </div>
+      </div>
+      <div>
+        <label for="area" class="block text-sm font-semibold mb-1.5">Área jurídica *</label>
+        <select id="area" name="area" class="w-full border border-navy-900/20 rounded-lg px-4 py-3 bg-white focus:border-gold-500">
+          <option value="">Selecione uma área</option>
+          <option>Direito de Família e Sucessões</option>
+          <option>Direito do Consumidor</option>
+          <option>Direito Civil</option>
+          <option>Direito Trabalhista</option>
+          <option>Direito Previdenciário</option>
+          <option>Outra / Não sei informar</option>
+        </select>
+        <p class="err">Selecione a área do seu caso.</p>
+      </div>
+      <div>
+        <label for="caso" class="block text-sm font-semibold mb-1.5">Descrição breve do caso *</label>
+        <textarea id="caso" name="caso" rows="4" class="w-full border border-navy-900/20 rounded-lg px-4 py-3 focus:border-gold-500" placeholder="Conte em poucas linhas o que aconteceu."></textarea>
+        <p class="err">Descreva brevemente seu caso (mínimo de 10 caracteres).</p>
+      </div>
+      <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-navy-900 hover:bg-navy-700 text-white font-semibold py-4 rounded-full transition"><i class="fa-brands fa-whatsapp text-xl text-gold-400"></i> Enviar Mensagem via WhatsApp</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-navy-900 text-white/80">
+  <div class="max-w-7xl mx-auto px-5 py-14 grid md:grid-cols-3 gap-10">
+    <div>
+      <p class="font-serif text-2xl text-white">Nome da Advogada</p>
+      <p class="text-sm text-gold-300 mt-1">Advocacia &amp; Consultoria Jurídica</p>
+      <p class="text-sm mt-4">OAB/UF nº 000.000</p>
+    </div>
+    <ul class="space-y-3 text-sm md:col-span-2 grid sm:grid-cols-2 gap-x-8">
+      <li class="flex gap-3"><i class="fa-solid fa-phone text-gold-400 mt-1"></i>(00) 00000-0000</li>
+      <li class="flex gap-3"><i class="fa-solid fa-envelope text-gold-400 mt-1"></i>contato@seudominio.com.br</li>
+      <li class="flex gap-3"><i class="fa-solid fa-location-dot text-gold-400 mt-1"></i>Rua / Avenida, nº, sala, bairro, cidade/UF</li>
+      <li class="flex gap-3"><i class="fa-regular fa-clock text-gold-400 mt-1"></i>Segunda a sexta, das 9h às 18h</li>
+    </ul>
+  </div>
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-5 py-6 text-xs text-white/55 space-y-1">
+      <p>Este site tem caráter exclusivamente informativo e respeita o Código de Ética e Disciplina da OAB e o Provimento 205/2021 do Conselho Federal, não constituindo promessa de resultado nem captação de clientela.</p>
+      <p>© <span id="ano"></span> Nome da Advogada Advocacia. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const WA = '5500000000000'; // Troque pelo número real: 55 + DDD + número (ex.: 5511912345678)
+
+const areas = [
+  ['fa-people-roof','Direito de Família e Sucessões','Divórcio, guarda, pensão alimentícia, inventário e planejamento sucessório conduzidos com sensibilidade.','Direito de Família e Sucessões'],
+  ['fa-cart-shopping','Direito do Consumidor','Cobranças indevidas, produtos com defeito, negativação e problemas com bancos, planos e companhias aéreas.','Direito do Consumidor'],
+  ['fa-file-signature','Direito Civil','Contratos, responsabilidade civil, indenizações, imóveis e cobranças com segurança jurídica.','Direito Civil'],
+  ['fa-briefcase','Direito Trabalhista','Verbas rescisórias, horas extras, assédio e reconhecimento de vínculo, para empregados e empregadores.','Direito Trabalhista'],
+  ['fa-user-clock','Direito Previdenciário','Aposentadorias, auxílios, pensão por morte e benefícios do INSS, inclusive revisões e recursos.','Direito Previdenciário']
+];
+document.getElementById('areasGrid').innerHTML = areas.map(a => `
+  <article class="card bg-ivory border border-navy-900/10 rounded-2xl p-7 flex flex-col">
+    <span class="w-12 h-12 rounded-full bg-navy-900 text-gold-400 flex items-center justify-center text-lg"><i class="fa-solid ${a[0]}"></i></span>
+    <h3 class="font-serif text-2xl font-semibold mt-5">${a[1]}</h3>
+    <p class="text-sm text-navy-900/70 mt-2 leading-relaxed flex-1">${a[2]}</p>
+    <button type="button" data-area="${a[3]}" class="duvida mt-6 self-start text-sm font-semibold text-navy-900 border border-navy-900/25 hover:bg-navy-900 hover:text-white px-5 py-2.5 rounded-full transition">Tirar dúvidas</button>
+  </article>`).join('');
+
+document.querySelectorAll('.duvida').forEach(b => b.addEventListener('click', () => {
+  document.getElementById('area').value = b.dataset.area;
+  document.getElementById('contato').scrollIntoView({behavior:'smooth'});
+  setTimeout(() => document.getElementById('caso').focus({preventScroll:true}), 600);
+}));
+
+// Menu móvel
+const mb = document.getElementById('menuBtn'), mm = document.getElementById('mobileMenu');
+mb.addEventListener('click', () => { const open = mm.classList.toggle('hidden') === false; mb.setAttribute('aria-expanded', open); });
+mm.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mm.classList.add('hidden'); mb.setAttribute('aria-expanded', false); }));
+document.getElementById('ano').textContent = new Date().getFullYear();
+
+// Máscara de telefone
+const whats = document.getElementById('whats');
+whats.addEventListener('input', () => {
+  let d = whats.value.replace(/\D/g,'').slice(0,11);
+  if (d.length > 6) d = d.replace(/^(\d{2})(\d{4,5})(\d{4}).*/, '($1) $2-$3');
+  else if (d.length > 2) d = d.replace(/^(\d{2})(\d+)/, '($1) $2');
+  whats.value = d;
+});
+
+// Validação + envio
+const form = document.getElementById('form');
+const rules = {
+  nome: v => v.trim().split(/\s+/).filter(Boolean).length >= 2,
+  email: v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
+  whats: v => { const n = v.replace(/\D/g,''); return n.length === 10 || n.length === 11; },
+  area: v => v !== '',
+  caso: v => v.trim().length >= 10
+};
+function check(id) {
+  const el = document.getElementById(id), ok = rules[id](el.value);
+  el.classList.toggle('invalid', !ok);
+  el.setAttribute('aria-invalid', !ok);
+  el.parentElement.querySelector('.err').style.display = ok ? 'none' : 'block';
+  return ok;
+}
+Object.keys(rules).forEach(id => document.getElementById(id).addEventListener('blur', () => check(id)));
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  const results = Object.keys(rules).map(check);
+  if (results.includes(false)) { form.querySelector('.invalid')?.focus(); return; }
+  const f = id => document.getElementById(id).value.trim();
+  const msg =
+`Olá! Gostaria de agendar uma consulta.
+
+*Nome:* ${f('nome')}
+*E-mail:* ${f('email')}
+*WhatsApp:* ${f('whats')}
+*Área jurídica:* ${f('area')}
+
+*Descrição do caso:*
+${f('caso')}`;
+  window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+});
+</script>
+</body>
+</html>
